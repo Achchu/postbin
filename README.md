@@ -1,12 +1,29 @@
-PostBin
-=======
+#include <stdio.h>
+#define MAX 1000
 
-About
------
-PostBin was made to make debugging web hooks easier. It gives you a unique URL to register as a callback and then at that same URL, view all POST requests made to that URL in a nicely formatted way. Previously you might write a debug script that would email you data for a web hook event. PostBin lets you create disposable "bins" that you can use to view this data. 
+int main(void) {
 
-PostBin was made for Google App Engine. If you'd like to make changes to the instance running at postbin.org, just fork this project, make your changes, push them back, and they will likely be deployed. 
+	int i=0,j=0;
+    int a[MAX];
+	printf("Press 0, once you are done with inputs\n");
+	printf("Input : \n");
+	while(1)
+    {
+        scanf("%d",&a[i]);
+        if(a[i]==0)
+           {
+             break;
+           }
+            i++;
+    }
+    printf("Output :\n");
 
-Contributors
-------------
- * Jeff Lindsay <progrium@gmail.com>
+	for(j=0;a[j]!=42;j++)
+	{
+		printf("%d\n",a[j]);
+		printf("\n");
+	}
+
+
+	return 0;
+}
